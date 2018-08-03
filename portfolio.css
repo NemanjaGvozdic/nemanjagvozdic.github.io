@@ -215,3 +215,16 @@ li:last-child{
         display: block;
     }
 }
+@media screen and (max-width: 1300px) {
+    .content-flex{
+    margin: auto;
+    display: flex;
+    min-width: 500px;
+    padding-bottom: 20px;
+    }
+    .content p{
+    width: calc(70% - 20px);
+    margin: auto;
+    }
+}
+    
