@@ -100,6 +100,10 @@ li{
     transition: .3s all linear;
     letter-spacing: 0.15em;
 }
+li div{
+    height: 70px;
+    border-right: 1px solid #b3b3b3;
+}
 li:nth-child(1){
     color: #cc2900;
     font-family: 'Gloria Hallelujah', cursive;
@@ -111,7 +115,9 @@ li:nth-child(2){
 li:nth-child(3){
     color: #b3b300;
 }
-
+li:last-child{
+    border: none;
+}
 .wrapper{
     background-color: #cccccc;
     background-size: cover;
