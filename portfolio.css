@@ -100,19 +100,16 @@ li{
     transition: .3s all linear;
     letter-spacing: 0.15em;
 }
-li div{
-    height: 70px;
-    border-right: 1px solid #b3b3b3;
-}
+
 li:nth-child(1){
     color: #cc2900;
     font-family: 'Gloria Hallelujah', cursive;
 }
-li:nth-child(3){
+li:nth-child(2){
     color: #0052cc;
     font-family: 'Lobster', cursive;
 }
-li:nth-child(5){
+li:nth-child(3){
     color: #b3b300;
 }
 li:last-child{
