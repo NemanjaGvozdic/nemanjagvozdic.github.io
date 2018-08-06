@@ -48,6 +48,9 @@ h2{
 p{
     color:#808080;
 }
+a{
+    text-decoration: none;
+}
 hr{
     margin: 0 30px;
     padding: 0;
@@ -154,23 +157,23 @@ li:last-child{
     justify-content: center;
     padding-bottom: 20px;
 }
-.projects-box-item{
+.card-box-item{
     display: flex;
     justify-content: center;
     background-color: #999999;
-    padding: 5px 10px;
+    padding: 5px 50px;
     margin-left: 10px;
     height: 100px;
-    width: 200px;
+    width: 150px;
     align-items: center;
     border: 2px solid #8c8c8c;
     transition: .5s all ease;
 }
-.projects-box-item:hover{
+.card-box-item:hover{
     transform: scale(1.1);
     box-shadow: 0px 0px 10px black;
 }
-.projects-box-item p{
+.card-box-item p{
     color: #737373;
 }
 
@@ -179,17 +182,24 @@ li:last-child{
     color: #737373;
 }
 .contact-box{
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
-.contact p::before{
-    content: "Email:";
-    background-color: forestgreen;
+.card-box-item p span{
+    opacity: 0;
+    transition: 1s all ease;
+}
+.card-box-item:hover p span{
+    opacity: 1;
+    background-color: #961d1d;
     padding: 0 5px;
     color: white;
     margin-right: 5px;
-    border-radius: 5px;
+    border-radius: 7px;
     transition:.5s background linear;
 }
+
 .mob-wrapper{
     display: none;
     margin: auto;
