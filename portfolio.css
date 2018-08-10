@@ -50,7 +50,6 @@ p{
 }
 a{
     text-decoration: none;
-    color:#737373;
 }
 hr{
     margin: 0 30px;
@@ -77,7 +76,7 @@ header::before{
     right: 0;
     top: 0;
     display: block;
-    background: url(header-background.jpg);
+    background: url(images/header-background.jpg);
     background-size: cover;
     transform-origin: center center 0;
     transform: translateZ(-1px) scale(2);
@@ -161,7 +160,9 @@ li:last-child{
 .card-box-item{
     display: flex;
     justify-content: center;
+    font-weight: bold;
     background-color: #999999;
+    background-size: cover;
     padding: 5px 50px;
     margin-left: 10px;
     height: 100px;
@@ -169,13 +170,18 @@ li:last-child{
     align-items: center;
     border: 2px solid #8c8c8c;
     transition: .5s all ease;
+    color: #333333;
+}
+.projects-box a .card-box-item:nth-child(1){
+    background-image: url(images/website-1.png);
 }
 .card-box-item:hover{
     transform: scale(1.1);
+    color: transparent;
     box-shadow: 0px 0px 10px black;
 }
 .card-box-item p{
-    color: #737373;
+    color: #333333;
 }
 
 .contact{
