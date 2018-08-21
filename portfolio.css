@@ -149,6 +149,9 @@ li:last-child{
 .languages p{
     font-size: 1rem;
 }
+.languages-box li:nth-last-child(2) p{
+    margin-top: 30px;
+}
 .projects{
     background-color: #bfbfbf;
 }
