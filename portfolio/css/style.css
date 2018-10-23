@@ -9,6 +9,14 @@ body {
     scroll-behavior: smooth;
 }
 
+canvas {
+    position: absolute;
+    display: none;
+    height: 50vh;
+    width: 50vw;
+    margin: 14% 0 0 50%;
+  }
+
 header {
     display: grid;
     grid-template-columns: 1fr;
@@ -258,6 +266,11 @@ a {
     body {
         overflow: hidden;
     }
+
+    canvas {
+        display: block;
+      }
+
     header {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
