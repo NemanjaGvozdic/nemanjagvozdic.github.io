@@ -2,12 +2,12 @@
 var canvas = document.getElementById("canvas"),
     ctx = canvas.getContext('2d');
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = (window.innerWidth /2);
+canvas.height = (window.innerHeight /2);
 
 var stars = [], // Array that contains the stars
     FPS = 60, // Frames per second
-    x = 50, // Number of stars
+    x = 30, // Number of stars
     mouse = {
       x: 0,
       y: 0
@@ -15,11 +15,11 @@ var stars = [], // Array that contains the stars
 
 // Push stars to array
 
-for (var i = 0; i < x; i++) {
+for (var i = 0;  i < x; i++) {
   stars.push({
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
-    radius: Math.floor( Math.random() * 2 ) + 6,
+    radius: Math.floor( Math.random() * 1 ) + 5,
     vx: Math.floor(Math.random() * 50) - 25,
     vy: Math.floor(Math.random() * 50) - 25
   });
@@ -28,7 +28,7 @@ for (var i = 0; i < x; i++) {
 // Draw the scene
 
 function draw() {
-  ctx.clearRect(0,0,canvas.width,canvas.height);
+  ctx.clearRect( 0,0,canvas.width,canvas.height);
   
   
   for (var i = 0, x = stars.length; i < x; i++) {
@@ -46,16 +46,16 @@ function draw() {
   for (var i = 0, x = stars.length; i < x; i++) {
     var starI = stars[i];
     ctx.moveTo(starI.x,starI.y); 
-    //if(distance(mouse, starI) < 150) ctx.lineTo(mouse.x, mouse.y);
+    if(distance(mouse, starI) < 100) ctx.lineTo(mouse.x, mouse.y);
     for (var j = 0, x = stars.length; j < x; j++) {
       var starII = stars[j];
-      if(distance(starI, starII) < 150) {
+      if(distance(starI, starII) <  100) {
         //ctx.globalAlpha = (1 / 150 * distance(starI, starII).toFixed(1));
         ctx.lineTo(starII.x,starII.y); 
       }
     }
   }
-  ctx.lineWidth = .3;
+  ctx.lineWidth = .7;
   ctx.strokeStyle = '#B54343';
   ctx.stroke();
 }
@@ -88,8 +88,8 @@ function update() {
 }
 
 canvas.addEventListener('mousemove', function(e){
-  mouse.x = e.clientX - 500;
-  mouse.y = e.clientY;
+  mouse.x = e.clientX - 840;
+  mouse.y = e.clientY - 230;
 });
 
 // Update and draw
