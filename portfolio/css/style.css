@@ -227,22 +227,22 @@ a {
         min-height: calc(100vh - 41px);
     }  
     .container-1-header {
-        background: url(/1.jpg) fixed no-repeat;
+        background: url('../images/header-1.jpg') fixed no-repeat;
         background-size: cover;
     }
 
     .container-2-header {
-        background: url(/2.jpg) fixed no-repeat;
+        background: url('../images/header-2.jpg') fixed no-repeat;
         background-size: cover;
     }
 
     .container-3-header{
-        background: url(/3.jpg) fixed no-repeat;
+        background: url('../images/header-3.jpg') fixed no-repeat;
         background-size: cover;
     }
 
     .container-4-header {
-        background: url(/4.jpg) fixed no-repeat;
+        background: url('../images/header-4.jpg') fixed no-repeat;
         background-size: cover;
     }
     .container-1-header,
