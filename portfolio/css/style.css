@@ -51,7 +51,6 @@ li {
 
 
 h1,
-h3,
 h4 {
     color: #B54343;    
 }
@@ -77,6 +76,7 @@ h1 {
 
 h3{
     font-size: 300%;
+    color: #FFF3C4;
     padding: 0;
     margin: 0;
 }
@@ -125,11 +125,17 @@ a {
     .container-3-header,
     .container-4-header {
         padding: 20px 0;
+        background: #B54343; 
     }
 
-    .container-1-header {
-        background: #B57843;
-    }
+    /* BOJE KONTEJNERA 1-4 AKO NEKAD 
+    ODLUCIM DA IH ISKORISTIM PONOVO
+    background: #B57843;
+    background: #B59343;
+    background: #B59E43;
+    background: #9BB543;
+    */
+
     .container-1-content {
         margin: auto;
     }
@@ -150,9 +156,6 @@ a {
         }
 
 
-    .container-2-header {
-        background: #B59343;
-    }
         .languages-wrapper {
             margin: auto;
         }
@@ -161,9 +164,7 @@ a {
             }
 
 
-    .container-3-header {
-        background: #B59E43;
-    }
+
     .container-3-content{
         margin: auto;
         text-align: left;
@@ -173,9 +174,7 @@ a {
         }
 
 
-    .container-4-header {
-        background: #9BB543;
-    }
+
     .container-4-content{
         margin: auto;
     }
@@ -202,6 +201,9 @@ a {
     h1 {
         font-size: 700%;
     }
+    h3 {
+        color: #B54343;
+    }
     h4 {
         font-size: 250%;
     }
@@ -224,6 +226,25 @@ a {
     .container-4 {
         min-height: calc(100vh - 41px);
     }  
+    .container-1-header {
+        background: url(/1.jpg) fixed no-repeat;
+        background-size: cover;
+    }
+
+    .container-2-header {
+        background: url(/2.jpg) fixed no-repeat;
+        background-size: cover;
+    }
+
+    .container-3-header{
+        background: url(/3.jpg) fixed no-repeat;
+        background-size: cover;
+    }
+
+    .container-4-header {
+        background: url(/4.jpg) fixed no-repeat;
+        background-size: cover;
+    }
     .container-1-header,
     .container-3-header {
         grid-column: 2;
@@ -311,6 +332,7 @@ a {
             height: 130px;
             width: 130px;
         }
+
         .container-1-content p {
             font-size: 1.1rem;
             letter-spacing: 1px;
