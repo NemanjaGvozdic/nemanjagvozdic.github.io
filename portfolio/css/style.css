@@ -1,4 +1,3 @@
-
 html,
 body {
     background: #FFF3C4;
@@ -8,7 +7,9 @@ body {
     text-align: center;
     scroll-behavior: smooth;
 }
-
+::selection {
+    background: rgb(248, 212, 212);
+}
 canvas {
     position: absolute;
     display: none;
@@ -60,8 +61,10 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6,
+a{
     font-weight: normal;
+    user-select: none; 
 }
 
 h1,
@@ -226,25 +229,30 @@ a {
     .container-4 {
         min-height: calc(100vh - 41px);
     }  
+
     .container-1-header {
         background: url('../images/header-1.jpg') fixed no-repeat;
-        background-size: cover;
     }
 
     .container-2-header {
         background: url('../images/header-2.jpg') fixed no-repeat;
-        background-size: cover;
     }
 
     .container-3-header{
         background: url('../images/header-3.jpg') fixed no-repeat;
-        background-size: cover;
     }
 
     .container-4-header {
         background: url('../images/header-4.jpg') fixed no-repeat;
+        background-position: top;
+    }    
+    .container-1-header,
+    .container-2-header,
+    .container-3-header,
+    .container-4-header {
         background-size: cover;
     }
+
     .container-1-header,
     .container-3-header {
         grid-column: 2;
@@ -271,7 +279,7 @@ a {
 }
 
 @media screen and (min-width: 950px){
-
+    
     ul {
         margin: 10% 0 10% 0;
     }
@@ -284,6 +292,7 @@ a {
     html,
     body {
         overflow: hidden;
+        background-size: cover;
     }
 
     canvas {
@@ -350,6 +359,9 @@ a {
         .container-3-content a:hover,
         .container-4-content a:hover {
             text-decoration: underline;
+        }
+        .container-4-content h6 p {
+            user-select: all;
         }
 
 }

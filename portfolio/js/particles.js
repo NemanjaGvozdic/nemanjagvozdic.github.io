@@ -46,7 +46,7 @@ function draw() {
   for (var i = 0, x = stars.length; i < x; i++) {
     var starI = stars[i];
     ctx.moveTo(starI.x,starI.y); 
-    if(distance(mouse, starI) < 100) ctx.lineTo(mouse.x, mouse.y);
+    //if(distance(mouse, starI) < 100) ctx.lineTo(mouse.x, mouse.y);
     for (var j = 0, x = stars.length; j < x; j++) {
       var starII = stars[j];
       if(distance(starI, starII) <  100) {
@@ -89,7 +89,7 @@ function update() {
 
 canvas.addEventListener('mousemove', function(e){
   mouse.x = e.clientX - 840;
-  mouse.y = e.clientY - 230;
+  mouse.y = e.clientY - 215;
 });
 
 // Update and draw

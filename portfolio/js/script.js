@@ -7,6 +7,11 @@
     // });
 
 
+
+    AOS.init();
+
+
+
     
     $(document).ready(function(){
         //$fn.scrollSpeed(step, speed, easing);
