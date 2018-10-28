@@ -22,12 +22,12 @@ const $contBox = $(".contact-box").hide();
 const $projBox = $(".projects-box").hide();
 
 
-//$(".tutorial-header").click(function(){
-//    if ( $tutBox.css('display') == 'none' ){
-//        $tutBox.slideDown(800);
-//        $tutHead.delay(4000).slideUp(800);
-//    }
-//});
+$(".tutorial-header").click(function(){
+   if ( $tutBox.css('display') == 'none' ){
+       $tutBox.slideDown(800);
+       $tutHead.delay(4000).slideUp(800);
+   }
+});
 
 
 $(".content-flex-header").click(function(){

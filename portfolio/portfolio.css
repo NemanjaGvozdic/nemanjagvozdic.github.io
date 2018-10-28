@@ -218,12 +218,12 @@ li:last-child{
 .mob-wrapper p{
     font-size: 1.4rem;
 }
-/*.tutorial{
+.tutorial{
     background-color: #cc2900;
 }
 .tutorial-box{
     padding-bottom: 10px;
-}*/
+}
 @media screen and (max-width: 600px) {
     .pc-wrapper {
         display: none;
