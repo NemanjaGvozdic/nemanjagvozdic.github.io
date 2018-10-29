@@ -14,7 +14,6 @@ html{
 h1{
     color: rgb(0, 110, 255);
     font-size: 2.7rem;
-    margin: 50px 0 0 0;
     padding: 0;
 }
 h2{
@@ -73,7 +72,7 @@ nav{
     top: 0px;
     opacity: .9;
     margin: 0 auto;
-    padding: 25px 0;
+    padding: 10px 0;
     background: rgb(0, 100, 231);
     z-index: 999;
     transition: .3s all linear;
@@ -145,7 +144,7 @@ nav > div:first-child{
 }
 
 .wrapper{
-    margin: 90px 0 0 0;
+
 }
 /*.wrapper div,
 .container-1 div{
@@ -202,16 +201,26 @@ nav > div:first-child{
 }
 
 
-@media screen and ( max-width: 700px){
+@media screen and ( max-width: 768px){
+    header {
+        background: none;
+        direction: row;
+    }
+    header h1 {
+        margin: 100px 0 0 0;
+    }
     ul{
-        flex-direction: row;
+        flex-direction: column;
+    }
+    li::first-child {
+        margin-right: 50;
     }
 }
 
 @media screen and ( max-width: 500px){
     ul{
-        flex-direction: colurmn;
         background: none;
+        direction: column;
     }
     li{
         width: 200px;
@@ -226,58 +235,5 @@ nav > div:first-child{
         border: none;
     }
 
-}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.alert,
-.info{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    margin: 0 0 10px 10px;
-}
-.alert{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    margin: 0 0 10px 10px;
-    background: rgb(255, 45, 45);
-    color: white;
-}
-.alert p{
-    font-size: 2rem;
-}
-.info{
-    background: rgb(255, 45, 45);
-    color: white;
-    padding: 10px;
-    margin: 0 0 15px 10px;
-    left: 60px;
-    border-radius: 20px;
-    opacity: 0;
-    transition: .3s opacity ease;
-}
-.alert:hover .info{
-    opacity: 1;
 }

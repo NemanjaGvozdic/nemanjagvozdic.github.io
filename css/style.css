@@ -143,8 +143,11 @@ a {
         margin: auto;
     }
         .container-1-content div {
-            background: #B54343;
-            border: 5px solid #B54343;
+            background: url(/images/me.png) no-repeat;
+            background-size: cover;
+            background-position: bottom;
+            border: 3px solid #B54343;
+            box-shadow: 0 0 20px 2px #B54343 inset;
             height: 100px;
             width: 100px;
             border-radius: 50%;
@@ -244,7 +247,6 @@ a {
 
     .container-4-header {
         background: url('../images/header-4.jpg') fixed no-repeat;
-        background-position: top;
     }    
     .container-1-header,
     .container-2-header,
@@ -333,15 +335,34 @@ a {
     
 
         .header div {
-            margin: 35% 15%;
+            margin: 33% 15%;
             text-align: left;
+        }
+
+        
+        .container-2-header h3,
+        .container-4-header h3 {
+            text-align: right;
+            margin: 10% 10% 0 0;
+        }
+        .container-1-header h3, 
+        .container-3-header h3 {
+            text-align: left;
+            margin: 10% 0 0 10%;
+        }
+        
+        .container-3-content a {
+            font-size: 120%;
         }
 
         .container-1-content div {
             height: 130px;
             width: 130px;
         }
-
+        /* .container-1-content:hover div {
+            transform: scale(1.2) rotate(-10deg);
+            
+        } */
         .container-1-content p {
             font-size: 1.1rem;
             letter-spacing: 1px;
@@ -363,5 +384,44 @@ a {
         .container-4-content h6 p {
             user-select: all;
         }
+
+          /* 
+
+            OVAJ DEO KODA ISKRIVLJUJE STRANICE NA SKROL
+            PROBLEM SA CONTAINER 4 STO PROBIJA DOLE 
+            TAKODJE LOSE PERFORMANSE PRI SKROLOVANJU    
+            NE KORISTITI!!!!
+
+          [data-aos="rotate-left"] {
+            transform: rotate(0deg) scale(1);
+            transition-property: transform;
+          }
+          [data-aos="rotate-left"].aos-animate {
+            transform: rotate(-9deg) scale(1.22);
+          }
+          [data-aos="rotate-left"].aos-animate h3{
+              transform: rotate(9deg);
+          }
+
+
+        [data-aos="rotate-right"] {
+        transform: rotate(0deg) scale(1);
+        transition-property: transform;
+        }
+          [data-aos="rotate-right"].aos-animate {
+            transform: rotate(9deg) scale(1.22);
+          }
+          [data-aos="rotate-right"].aos-animate h3{
+            transform: rotate(-9deg);
+          } 
+          
+        container-4-header {
+            clip-path: polygon(0 0, 100% 0, 74% 100%, 0% 100%);
+        }
+
+        .container-4 {  
+            grid-template-columns: 1.3fr 1fr;
+        }  
+        */
 
 }
