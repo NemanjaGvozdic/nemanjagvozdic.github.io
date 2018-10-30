@@ -140,7 +140,7 @@ a {
     */
 
     .container-1-content {
-        margin: auto;
+        margin: 7% auto;
     }
         .container-1-content div {
             background: url(/images/me.png) no-repeat;
@@ -335,7 +335,7 @@ a {
     
 
         .header div {
-            margin: 33% 15%;
+            margin: 35% 15%;
             text-align: left;
         }
 
@@ -383,6 +383,7 @@ a {
         }
         .container-4-content h6 p {
             user-select: all;
+            margin: 0;
         }
 
           /* 
