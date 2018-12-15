@@ -1,0 +1,59 @@
+html,
+body {
+    background: #FFF3C4;
+    padding: 0;
+    margin: 0;
+    font-family: 'Century Gothic';
+    text-align: center;
+    overflow: hidden;    
+    user-select: none;
+}
+
+h4 {
+    color: #B54343;
+    font-size: 3rem;
+}
+.langs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100px;
+    width: 150px;
+    margin: 0 40.3%;
+}
+
+.eng {
+    margin-left: 50px;
+}
+
+.chose h4{
+    font-size: 2.5rem;
+    color: #B54343;
+    margin: 20% auto 2%;
+}
+
+.chose h4::before {
+    content: "Chose your language";
+    animation-name: choseText;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes choseText {
+    0% {content: "Chose your language";}
+    50% {content: "Odaberite vas jezik";}
+    100% {content: "Chose your language";}
+}
+
+.srb h4,
+.eng h4{ 
+    margin: 15px 0 0 0;
+    font-size: 3rem;
+    font-weight: lighter;
+    transition: .5s all ease;
+}
+.srb:hover h4,
+.eng:hover h4 {
+    transform: scale(1.2);
+}
+
+

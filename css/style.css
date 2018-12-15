@@ -79,7 +79,7 @@ h1 {
 
 h3{
     font-size: 300%;
-    color: #FFF3C4;
+    color: #FFF5CB;
     padding: 0;
     margin: 0;
 }
@@ -253,6 +253,10 @@ a {
     .container-3-header,
     .container-4-header {
         background-size: cover;
+        height: 100vh;
+    }
+    .container-4-header {
+        height: calc(100vh - 80px);
     }
 
     .container-1-header,
@@ -291,10 +295,15 @@ a {
     }
 }
 @media screen and (min-width: 1360px){
+    
     html,
     body {
-        overflow: hidden;
+        overflow: scroll;
+        overflow-x: hidden;
         background-size: cover;
+    }
+    ::-webkit-scrollbar {
+        width: 0px;
     }
 
     canvas {
@@ -358,16 +367,27 @@ a {
         .container-1-content div {
             height: 130px;
             width: 130px;
+        }        
+
+        /*
+        OVAJ DEO SKRIPTE SLUZI AKO IMA 
+        PUNO TEKSTA DA MOZE DA SE SKROLUJE
+        */
+        .container-1-content  {
+            overflow: scroll;
+            overflow-x: hidden;
+            max-height: 100vh;
         }
-        /* .container-1-content:hover div {
-            transform: scale(1.2) rotate(-10deg);
-            
-        } */
+        .container-1-content::-webkit-scrollbar {
+            background: #B54343;
+        }
+
+        
         .container-1-content p {
             font-size: 1.1rem;
             letter-spacing: 1px;
             text-align: left;
-            width: 70%;
+            width: 60%;
             margin: 20px auto 10px;
         }
         .languages-wrapper {
