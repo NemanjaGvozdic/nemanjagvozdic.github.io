@@ -2,12 +2,12 @@
 var canvas = document.getElementById("canvas"),
     ctx = canvas.getContext('2d');
 
-canvas.width = (window.innerWidth /2);
-canvas.height = (window.innerHeight /2);
+canvas.width = (window.innerWidth / 2.3);
+canvas.height = (window.innerHeight / 2);
 
 var stars = [], // Array that contains the stars
     FPS = 60, // Frames per second
-    x = 30, // Number of stars
+    x = 20, // Number of stars
     mouse = {
       x: 0,
       y: 0
@@ -34,7 +34,7 @@ function draw() {
   for (var i = 0, x = stars.length; i < x; i++) {
     var s = stars[i];
   
-    ctx.fillStyle = "#B54343";
+    ctx.fillStyle = "#b3b3b3";
     ctx.beginPath();
     ctx.arc(s.x, s.y, s.radius, 0, 2 * Math.PI);
     ctx.fill();
@@ -56,7 +56,7 @@ function draw() {
     }
   }
   ctx.lineWidth = .7;
-  ctx.strokeStyle = '#B54343';
+  ctx.strokeStyle = '#b3b3b3';
   ctx.stroke();
 }
 

@@ -1,6 +1,6 @@
 html,
 body {
-    background: #FFF3C4;
+    background: #f2f2f2;
     padding: 0;
     margin: 0;
     font-family: 'Century Gothic';
@@ -13,7 +13,7 @@ body {
 canvas {
     position: absolute;
     display: none;
-    margin: 14% 0 0 50%;
+    margin: 13% 0%;
   }
 
 header {
@@ -32,7 +32,7 @@ footer {
 nav {
     min-height: 50vh;
     width: 100%;    
-    background: #B54343;
+    /* background: #B54343; */
 }
 
 ul {
@@ -47,11 +47,14 @@ li {
     margin-right: 20px;
 }
     li a {
-        color: #FFF3C4;
+        color: #cccccc;
     }
+    
 
 
-h1,
+h1 {
+    color: #B54343;
+}
 h4 {
     color: #B54343;    
 }
@@ -294,6 +297,7 @@ a {
         margin: 5% auto;
     }
 }
+
 @media screen and (min-width: 1360px){
     
     html,
@@ -308,11 +312,12 @@ a {
 
     canvas {
         display: block;
+        margin-left: 43%;
       }
 
     header {
         grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: .6fr 1fr;
         height: 100vh;
         /*position:relative;*/
     }
@@ -320,7 +325,11 @@ a {
     h3 {
         font-size: 400%;
     }
-    
+
+    h4 {
+        margin-left: 10px;
+    }
+
     h5 {
         font-size: 250%;
     }
@@ -330,7 +339,7 @@ a {
     }
     
     ul {
-        margin: 40% 5% 40% auto;
+        margin: 53% 5% 40% auto;
     }
 
     li {
@@ -341,25 +350,64 @@ a {
     li:hover {
         margin-right: 5%;
     }
-    
+
+    nav a:hover {
+        color: #adadad;
+    }
+
 
         .header div {
-            margin: 35% 15%;
+            margin: 30% 12%;
             text-align: left;
         }
 
-        
-        .container-2-header h3,
-        .container-4-header h3 {
-            text-align: right;
-            margin: 3% 10% 0 0;
-        }
         .container-1-header h3, 
         .container-3-header h3 {
             text-align: left;
-            margin: 3% 0 0 10%;
+            transform: rotate(90deg);
         }
-        
+
+        .container-2-header h3,
+        .container-4-header h3 {
+            text-align: right;
+            transform: rotate(-90deg);  
+        }
+
+        .container-1-header h3 {
+            margin: -39% 100% 0 0;
+        }
+
+        .container-2-header h3 {
+            margin: -14% 0 0 100%;
+        }
+
+        .container-3-header h3 {
+            margin: -46% 100% 0 0;
+        }
+
+        .container-4-header h3 {
+            margin: -13% 0 0 100%;
+        }
+
+
+        .container-1-header span,
+        .container-2-header span, 
+        .container-3-header span,  
+        .container-4-header span{
+            font-size: 20rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+            color: #8c8c8c;
+            opacity: .6;
+        }
+        .container-1-header span,
+        .container-3-header span {
+            margin: 0 70% 0 0;
+        }
+        .container-2-header span,
+        .container-4-header span {
+            margin: -50% 0 0 70%;
+        }
         .container-3-content a {
             font-size: 120%;
         }
@@ -405,44 +453,5 @@ a {
             user-select: all;
             margin: 0;
         }
-
-          /* 
-
-            OVAJ DEO KODA ISKRIVLJUJE STRANICE NA SKROL
-            PROBLEM SA CONTAINER 4 STO PROBIJA DOLE 
-            TAKODJE LOSE PERFORMANSE PRI SKROLOVANJU    
-            NE KORISTITI!!!!
-
-          [data-aos="rotate-left"] {
-            transform: rotate(0deg) scale(1);
-            transition-property: transform;
-          }
-          [data-aos="rotate-left"].aos-animate {
-            transform: rotate(-9deg) scale(1.22);
-          }
-          [data-aos="rotate-left"].aos-animate h3{
-              transform: rotate(9deg);
-          }
-
-
-        [data-aos="rotate-right"] {
-        transform: rotate(0deg) scale(1);
-        transition-property: transform;
-        }
-          [data-aos="rotate-right"].aos-animate {
-            transform: rotate(9deg) scale(1.22);
-          }
-          [data-aos="rotate-right"].aos-animate h3{
-            transform: rotate(-9deg);
-          } 
-          
-        container-4-header {
-            clip-path: polygon(0 0, 100% 0, 74% 100%, 0% 100%);
-        }
-
-        .container-4 {  
-            grid-template-columns: 1.3fr 1fr;
-        }  
-        */
 
 }
