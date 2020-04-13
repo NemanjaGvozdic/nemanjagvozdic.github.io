@@ -1,0 +1,149 @@
+body {
+    overflow: hidden;
+  
+    font-family: Segoe UI, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+    scroll-margin: hidden;
+    background-color: #14151b;
+  }
+  nav {
+    position: fixed;
+    width: 100%;
+    z-index: 998;
+  }
+  nav ul {
+    margin: 0;
+    padding: 3px 20px;
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    background-color: #22232b;
+    grid-template-columns: 1fr;
+    
+  }
+  
+  nav ul li:first-child {
+    margin: 5px 150px;
+  }
+  nav ul li {
+    color: #c4c4c4;
+    transition: 0.3s ease;
+    margin: 25px 20px 0;
+    cursor: pointer;
+  }
+  
+  nav ul li:last-child {
+    margin: 25px 150px 0 20px;
+    color: #ff4700;
+  }
+  nav ul li:hover {
+    color: #fff;
+  }
+  
+  nav ul li img {
+    width: 150px;
+    transition: .3s ease all;
+  }
+  
+  header {
+    background-image: url("https://wallpapercave.com/wp/wp2455915.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  h1,
+  h3 {
+    padding: 0;
+    margin: 0;
+  }
+  
+  h1 {
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  h3 {
+    color: #ff4700;
+    font-size: 2.5rem;
+  }
+  
+  p {
+    color: #fff;
+  }
+  .sa-logo {
+    width: 100%;
+    padding-top: 0;
+    transform: skewY(30deg) skewX(30deg);
+    opacity: 0;
+    transition: 0.6s ease;
+  }
+  
+  .sa-logo-active {
+    display: block;
+    width: 20%;
+    padding-top: 30%;
+    margin: 0 auto 0;
+    opacity: 1;
+    transform: skewY(0deg) skewX(0deg);
+  }
+  
+  .sa-logo-up {
+    padding-top: 20%;
+    width: 15%;
+  }
+  
+  .welcome-text {
+    opacity: 0;
+    font-size: 1rem;
+    transition: 0.7s ease;
+  }
+  .welcome-text-active {
+    opacity: 1;
+    margin-top: 15px;
+    font-size: 2.3rem;
+  }
+  
+  .arrow {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  
+    display: block;
+    opacity: 0;
+    text-align: center;
+    margin-top: 15%;
+    transition: 1.5s ease;
+    animation: arrow 1.2s infinite;
+  }
+  
+  .arrow-active {
+    opacity: 1;
+  }
+  
+  @keyframes arrow {
+    0% {padding-top: 0;}
+    50% {padding-top: 15px;}
+    100% {padding-top: 0;}
+  }
+  
+  .wrapper {
+    position: absolute;
+    background-color: #22232b;
+    width: 70%;
+    height: 500px;
+    margin: 0 15%;
+    padding-bottom: 500px;
+  }
+  
+  .wrapper h3 {
+    margin: 60px 40px 0 140px;
+  }
+  .wrapper p {
+    margin: 20px 40px 0 140px;
+    max-width: 300px;
+  }
+  
