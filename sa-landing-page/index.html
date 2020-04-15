@@ -15,7 +15,7 @@
           <img
             id="loader-logo"
             class="loader-logo"
-            src="https://i.imgur.com/c6gZ3L2.png"
+            src="img/sa-gray-logo.png"
           />
         </div>
       </div>
@@ -26,29 +26,36 @@
         <li>
           <img
             id="logo"
-            src="https://www.sa-rpg.com/forum/uploads/monthly_2019_08/salogoorange.png.7c26e97d1ec58a65a7a990ebf14289b0.png.ac67a87055049e30ef1c93c690097905.png"
+            src="img/sa-logo-2.png"
           />
         </li>
         <li><a>Vip Shop</a></li>
         <li><a>Donacije</a></li>
-        <li><a>O Nama</a></li>
-        <li id="nav-last"><a>Forum</a></li>
+        <li><a href="#o-nama">O Nama</a></li>
+        <li><a>Forum</a></li>
+        <li id="nav-last"><a>Uloguj Se</a></li>
       </ul>
     </nav>
     <header>
       <img
         id="sa-logo"
         class="sa-logo"
-        src="https://www.sa-rpg.com/forum/uploads/monthly_2019_08/salogonovi.png.2a717a1acf4a8caccc189e9e5dfa6882.png"
+        src="img/sa-logo.png"
       />
-      <h1 id="welcome-text" class="welcome-text">
-        Dobro Dosli na Skill Arenu!
-      </h1>
-      <span id="arrow" class="arrow">🡣</span>
+      <div id="welcome-content" class="welcome-content">
+        <h1 id="welcome-text" class="welcome-text">
+          Dobro Dosli na Skill Arenu!
+        </h1>
+        <div id="welcome-btns" class="welcome-btns">
+          <a>REGISTRUJ SE</a>
+          <a>ULOGUJ SE</a>
+        </div>
+        <span id="arrow" class="arrow">🡣</span>
+      </div>
     </header>
     <div class="wrapper">
       <div class="wrapper-content">
-        <h3>O nama</h3>
+        <h3 id="o-nama">O nama</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -69,10 +76,14 @@
         <h3>Raspolozen za pricu?</h3>
         <p>Pridruzi se nasem teamspeak ili discord serveru!</p>
         <div> 
-          <a>TEAMSPEAK</a>
-          <a>DISCORD</a>
+          <input id="nickname-ts-txtbox" type="text" placeholder="Unesite nickname za povezivanje na TS3"/> <br>
+          <a onclick="runTs()">TEAMSPEAK</a>
+          <a href="https://discordapp.com/invite/ErAb5yq" target="_blank">DISCORD</a>
         </div>
+
       </div>
+
+      <!--
       <div class="wrapper-sidebar">
         <div class="info-card">
           <p>Trenutni Broj Igraca:</p>
@@ -83,8 +94,9 @@
           <p>3d 15h</p>
         </div>
       </div>
+      -->
+      <footer><p>&#169; Copyright Skill Arena 2020</p></footer>
     </div>
-
     <script src="src/index.js"></script>
   </body>
 </html>
